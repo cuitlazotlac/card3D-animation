@@ -14,7 +14,6 @@ body {
 }
 
 .container {
-  /* background: lightblue; */
   width: 50%;
   display: flex;
   justify-content: center;
@@ -23,6 +22,7 @@ body {
 }
 
 .card {
+  transform-style: preserve-3d;
   min-height: 80vh;
   width: 35rem;
   border-radius: 30px;
@@ -45,7 +45,7 @@ body {
 .circle {
   width: 15rem;
   height: 15rem;
-  background: linear-gradient(to right, rgba(245, 70, 66, 0.75),rgba(8, 83, 156, 0.75));
+  background: linear-gradient(to right, rgb(20, 2, 255),rgba(8, 83, 156, 0.75));
   position: absolute;
   border-radius: 50%;
   z-index: 1;
@@ -61,6 +61,7 @@ body {
     padding: 2rem 0rem;
     color: #585858;
     font-weight: lighter;
+    transition: all 0.75s ease-out;
 }
 
 .abilities {
@@ -93,7 +94,7 @@ button.active{
 .link button{
     width: 100%;
     padding: 1rem 0rem;
-    background: #f54642;
+    background: #1402FF;
     border: none;
     color: white;
     cursor: pointer;

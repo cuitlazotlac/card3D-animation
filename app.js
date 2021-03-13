@@ -4,7 +4,7 @@ const container = document.querySelector(".container");
 
 //Items
 const title = document.querySelector(".title");
-const agent = document.querySelector(".sneaker img");
+const agent = document.querySelector(".agent img");
 const link = document.querySelector(".link button");
 const description = document.querySelector(".info h3");
 const abilities = document.querySelector(".abilities");
@@ -18,8 +18,8 @@ container.addEventListener("mousemove", (e) => {
 })
 
 // Animate In
-container.addEventListener('mouseenter', e => {
-    card.style.transition = 'none';
+container.addEventListener("mouseenter", e => {
+    card.style.transition = "none";
     //Popout effect
     title.style.transform = "translateZ(150px)";
     agent.style.transform = "translateZ(150px)";
@@ -29,8 +29,8 @@ container.addEventListener('mouseenter', e => {
 });
 
 // Animate Out
-container.addEventListener('mouseleave', e => {
-    card.style.transition = 'all 0.5s ease';
+container.addEventListener("mouseleave", e => {
+    card.style.transition = "all 0.5s ease";
     card.style.transform = `rotateY(0deg) rotateY(0deg)`;
     //Popout effect
     title.style.transform = "translateZ(0px)";
