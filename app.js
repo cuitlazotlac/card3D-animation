@@ -12,8 +12,8 @@ const abilities = document.querySelector(".abilities");
 
 // Moving Animation Event
 container.addEventListener("mousemove", (e) => {
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 })
 
@@ -21,12 +21,12 @@ container.addEventListener("mousemove", (e) => {
 container.addEventListener("mouseenter", (e) => {
     card.style.transition = "none";
     //Popout effect
-    title.style.transform = "translateZ(150px)";
+    title.style.transform = "translateZ(50px)";
     // agent.style.transform = "translateZ(200px) rotateZ(-45deg)";
-    agent.style.transform = "translateZ(200px)";
-    description.style.transform = "translateZ(125px)";
-    abilities.style.transform = "translateZ(100px)";
-    link.style.transform = "translateZ(75px)";
+    agent.style.transform = "translateZ(50px)";
+    description.style.transform = "translateZ(50px)";
+    abilities.style.transform = "translateZ(50px)";
+    link.style.transform = "translateZ(50px)";
 });
 
 // Animate Out
