@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  font-family: "Anton", sans-serif;
 }
 
 body {
@@ -18,11 +21,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .card {
-  background-image: url("icebox.png");
+  background-image: url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt113dffe00e904ffa/5fd2a7f6da1c393383d3f6a6/ValorantWallpaper_Bind.jpg");
+  /* opacity: 0.5; */
   transform-style: preserve-3d;
   min-height: 80vh;
   width: 35rem;
@@ -46,63 +49,78 @@ body {
 .circle {
   width: 15rem;
   height: 15rem;
-  background: linear-gradient(to right, rgb(52, 94, 158),rgb(78, 137, 225));
+  /* background: linear-gradient(to right, rgb(52, 94, 158), rgb(78, 137, 225)); */
+  background: #0e1a25;
   position: absolute;
   border-radius: 50%;
   z-index: 1;
 }
 
-.info h1{
-    font-size: 3rem;
-    transition: all 0.75s ease-out;
+.info h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffff;
+  transition: all 0.75s ease-out;
 }
 
-.info h3{
-    font-size: 1.3rem;
-    padding: 2rem 0rem;
-    color: #FFFF;
-    font-weight: lighter;
-    transition: all 0.75s ease-out;
+.info h3 {
+  font-size: 2rem;
+  padding: 2rem 0rem;
+  color: #ffff;
+  text-align: center;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 8px;
 }
 
 .abilities {
-    display: flex;
-    justify-content: space-between;
-    transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
 }
 
-.abilities button{
-    padding: 0.5rem 2rem;
-    background: none;
-    border: none;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #FFFF;
+.abilities button {
+  padding: 0.5rem 0.5rem;
+  background: #0e1a25;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(71, 71, 71, 0.5);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffff;
 }
 
-button.active{
-    background: #585858;
-    color: white;
+.icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+button.active {
+  background: #ff4655;
+  color: #ffff;
 }
 
 .link {
-    margin-top: 5rem;
-    transition: all 0.75s ease-out;
+  margin-top: 5rem;
+  transition: all 0.75s ease-out;
 }
 
-.link button{
-    width: 100%;
-    padding: 1rem 0rem;
-    background: #1402FF;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 30px;
-    font-weight: bolder;
+.link button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #1402ff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
 }
 
 .title {
-  color: #FFFF;
+  color: #ff4655;
 }
